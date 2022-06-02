@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="icon" type="images/x-icon" href="images/favicon.jpg">
+    <meta charset="utf-8" name="viewport" width="device-width, initial-scale=1.0">
+    <style>
+.div {
+    width:30px;
+    height:30px;
+    background-color:rgb(24, 255, 24);
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   margin: 3px;
+
+}
+.unfinished{
+    background-color: red;
+}
+body{
+    width: 100vw;
+}
+#section{
+    display: flex;
+    width: 70vw;
+    justify-content: ;
+    position:relative;
+left:70px ;
+    color:rgb(19, 8, 8);
+}
+
+section::before{
+    content: "";
+    position:absolute;
+    top:50%;
+    width:350px;
+    height:5px;
+    background-color: rgb(24, 255, 24);
+    z-index: -1;
+transform:translateX(-30px)}
+
+section::after{
+    content: "";
+    position:absolute;
+    top:50%;
+    width:150px;
+    height:5px;
+    background-color: rgb(245, 126, 126);
+    z-index: -1;
+transform:translateX(280px)}
+div:hover{
+    transform:scale(1.2);
+    cursor:pointer;
+}
+.btn{
+    width:70px;
+    border: 0px;
+    height: 40px;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    font-family: monospace;
+    margin:20px -40px 0px 150px;
+    transition: 400ms transform ease-in-out ; 
+}
+
+.class{
+    background-color:yellow;
+}
+
+.btn:hover{
+    transform:scale(0.9);
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+#para{
+    color:brown;
+    font-size: 30px;
+}
+    </style>
+    
+</head>
+<body id="body">
+    <section id="section">
+
+<div class="div">1</div>
+<div class="div">2</div>
+<div class="div">3</div>
+<div class="div">4</div>
+<div class="div">5</div>
+<div class="div unfinished">6</div>
+<div class="div unfinished">7</div>
+
+
+    </section>
+
+    <p id="para">This is a paragraph written by your's truly.........</p>
+    
+    <button class="btn" onclick="myFunction()">Hide</button>
+    <button class="btn" onclick="myFunction2()">Show</button>
+    
+    <script src="script.js">
+    
+    </script>
+</body>
+</html>
