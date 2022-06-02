@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On and Off</title>
+    <style>
+        body{
+            background-color: black;
+        }
+div{
+    background-color: rgb(37, 34, 34);
+    border-radius:50%;
+    width: 150px;
+    height:150px;
+    position:relative;
+    top:100px;
+    left:50%;
+    box-shadow: 20px 0px 70px 20px gray;
+}
+.turnon{
+    background-color:gold;
+    border-radius:50%;
+    width: 150px;
+    height:150px;
+    position:relative;
+    top:100px;
+    left:50%;
+    box-shadow: 20px 0px 70px 20px yellow;
+}
+.btn{
+
+    margin-top: 200px;
+    margin-left: 300px;
+
+}
+.turnofff{
+    background-color: white;
+    position: relative;
+    top:-80px;
+}
+
+div.star{
+    background-color: white;
+    border-radius:50%;
+    width: 5px;
+    height:5px;
+    position:relative;
+    top:10px;
+    left:50%;
+    box-shadow:2px 2px 7px 1px white;
+    display: inline-block;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.7);
+    }
+}
+
+
+#one{
+    left:1000px;
+    top:2px;
+    animation:blink 1s ;
+    animation-delay: 1s;}
+
+#two{
+   
+    left:1000px;
+    top:100px;
+    animation:blink 2s ;
+    animation-delay: 2s;
+    
+}
+#three{
+   
+    left:900px;
+    top:29px;
+    animation:blink 500ms ;
+    animation-delay: 1s;
+    
+}
+#four{
+    left:600px;
+    top:0px;
+    animation:blink 1.8s ;
+    animation-delay: 1s;
+  
+}
+#five{
+    
+    left:800px;
+    top:60px;
+}
+#six{
+   
+    left:250px;
+    top:20px;
+    animation:blink 1s ;
+    animation-delay: 1s;
+   
+}
+#seven{
+    left:200px;
+    top:1px;
+    animation:blink 1.5s ;
+    animation-delay: 1s;
+    
+}
+#eight{
+    left:10px;
+    top:2px;
+    animation:blink 1.2s ;
+    animation-delay: 1s;
+}
+    </style>
+</head>
+<body id="body"><section id="section">
+<div class="star" id="one"></div>
+<div class="star" id="two"></div>
+<div class="star" id="three"></div>
+<div class="star" id="four"></div>
+<div class="star" id="five"></div>
+<div class="star" id="six"></div>
+<div class="star" id="seven"></div>
+<div class="star" id="eight"></div></section>
+<div id="bulb"></div>
+<button class="btn" onclick="turnOn()">Turn On</button>
+<button class="btn" onclick="turnOff()">Turn Off</button>
+
+<script src="bulb.js"></script>
+</body>
+</html>
